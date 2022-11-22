@@ -34,12 +34,13 @@ const Profile = (props) => {
   loadUser = useCallback(async () => {
     try {
       const userId = id;
+      console.log(userId);
       if (!userId) {
         return;
       }
       //setIsLoading(true);
       //const url = `http://localhost:8080/users/${userId}`
-      const url = `https://morning-lowlands-96711.herokuapp.com/users/$userId}`;
+      const url = `https://morning-lowlands-96711.herokuapp.com/users/${userId}`
       const authenticatedUser = JSON.parse(localStorage.getItem('auth'));
       if(authenticatedUser){
       const response = await axios.get(url);
