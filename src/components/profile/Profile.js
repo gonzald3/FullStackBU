@@ -48,6 +48,7 @@ const Profile = (props) => {
       
       if (response && response.data && response.data.message) {
         alert(response.data.message);
+        console.log({response});
       }} else {
         //setUserProfile(response.data[0]);
         //await loadUserFollower();
