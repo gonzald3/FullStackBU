@@ -43,17 +43,17 @@ const Profile = (props) => {
       const url = `https://morning-lowlands-96711.herokuapp.com/users/${userId}`;
       const authenticatedUser = JSON.parse(localStorage.getItem('auth'));
       console.log(url);
-    //   if(authenticatedUser){
-    //   const response = await axios.get(url);
+      if(authenticatedUser){
+      const response = await axios.get(url);
       
-    //   if (response && response.data && response.data.message) {
-    //     alert(response.data.message);
-    //     console.log({response});
-    //   }} else {
-    //     //setUserProfile(response.data[0]);
-    //     //await loadUserFollower();
-    //   }
-      //setIsLoading(false);
+      if (response && response.data && response.data.message) {
+        alert(response.data.message);
+        console.log({response});
+      }} else {
+        //setUserProfile(response.data[0]);
+        //await loadUserFollower();
+      }
+      setIsLoading(false);
     } catch (error) {
       //setIsLoading(false);
     }
