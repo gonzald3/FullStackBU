@@ -40,7 +40,7 @@ const Profile = (props) => {
       }
       //setIsLoading(true);
       //const url = `http://localhost:8080/users/${userId}`
-      const url = `https://morning-lowlands-96711.herokuapp.com/users/${userId}`
+      const url = 'https://morning-lowlands-96711.herokuapp.com/users/' + userId;
       //const url = `https://morning-lowlands-96711.herokuapp.com/users/${userId}`
       const authenticatedUser = JSON.parse(localStorage.getItem('auth'));
       if(authenticatedUser){
