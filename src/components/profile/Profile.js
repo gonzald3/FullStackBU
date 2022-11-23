@@ -53,7 +53,7 @@ const Profile = (props) => {
         //setUserProfile(response.data[0]);
         //await loadUserFollower();
       }
-      setIsLoading(false);
+      //setIsLoading(false);
     } catch (error) {
       //setIsLoading(false);
     }
